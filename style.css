@@ -1,0 +1,272 @@
+header h1 img{
+    width: 300px;
+    height:auto;
+    padding-left:60px;
+    padding-top:30px;
+    margin-bottom:30px;
+}
+header h1 a:hover{
+    opacity:0.7;
+}
+header{
+    width:100%;
+    position:fixed;
+    background-color:#fff;
+    color:#0d1b2a;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    padding-bottom:14px;
+    z-index:200;
+    box-shadow:4px 6px 6px rgba(0,0,0,0.2);
+}
+header nav ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:600px;
+    margin-right:40px;
+}
+header nav ul li{
+    list-style:none;
+    font-size:20px;
+}
+header nav ul li a{
+    display:inline-block;
+    transition:all 0.2s ease;
+}
+header nav ul li a:hover{
+    text-decoration:double underline;
+    box-shadow:1px 2px 3px rgba(0,0,0,0.1);
+    transform:translateY(-2px);
+}
+#about,#schedule,#gallery,#access{
+    scroll-margin-top:160px;
+}
+main{
+    margin:0;
+    padding:0;
+}
+main h2{
+    font-size:30px;
+    margin:20px 0;
+}
+main p{
+    font-size:18px;
+    margin:15px 40px;
+    line-height:1.8;
+}
+main img{
+    width:700px;
+    height:auto;
+    margin:0;
+}
+.about{
+    background-color:#fff;
+    margin-bottom:300px;
+    padding-top:160px;
+    padding-left:40px;
+    padding-bottom:20px;
+}
+.about-content{
+    display:flex;
+    position:relative;
+}
+.about-img img{
+    width:350px;
+    height:auto;
+    box-shadow:8px 4px 6px rgba(0,0,0,0.2);
+}
+.about::before{
+    content:"";
+    position:fixed;
+    background:url(images/gallery/JJEK3358.JPG) no-repeat top/cover;
+    z-index:-100;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0;
+}
+.schedule{
+    background-color:#fff;
+    padding:30px 0 20px 40px;
+}
+.yearly{
+    display:flex;
+    /*position:relative;*/
+}
+.yearly p{
+    line-height:2.5;
+    font-size:22px;
+}
+.yearly-img{
+    position:relative;
+}
+.img1 img{
+    width:300px;
+    height:auto;
+    border-radius:50%;
+    position:absolute;
+    top:30px;
+    left:350px;
+}
+.img2 img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    position:absolute;
+    top:130px;
+    left:600px;
+}
+.gallery{
+    background-color:#fff;
+    margin-bottom:0;
+    padding-left:40px;
+    padding:30px 0 20px 40px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.gallery img{
+    width:240px;
+    height:180px;
+    object-fit:cover;
+}
+.access{
+    background-color:#fff;
+    margin-top:0;
+    padding:30px 0 20px 40px;
+}
+.access p img{
+    width:40px;
+    height:auto;
+}
+.access p a{
+    transition:all 0.1s ease;
+}
+.access p a:hover{
+    color:darkblue;
+}
+.circle{
+    background-color:#2a435e;
+    box-shadow:4px 6px 6px rgba(0,0,0,0.2);
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    right:10px;
+    bottom:45px;
+    position:fixed;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.circle h3,.circle p{
+    margin:0;
+    padding:0;
+}
+.circle h3{
+    font-size:24px;
+    padding:0 auto;
+    color:#fff;
+}
+.circle p{
+    font-size:13px;
+    color:red;
+}
+.circle a{
+    display:inline-block;
+    transition:all 0.2s ease;
+}
+.circle a:hover{
+    transform:translateX(-10px) translateY(-5px);
+}
+footer{
+    background-color:#000;
+    color:#fff;
+    text-align:center;
+    padding:5px 0;
+    width:100%;
+}
+
+@media (max-width:768px){
+    header h1 img{
+        width:250px;
+        height:auto;
+        margin-left:10px;
+        padding-left:0;
+        padding-top:0;    
+    }
+    header{
+        flex-direction:column;
+        padding-bottom:8px;
+        justify-content:center;
+        align-items:center;
+    }
+    header nav ul{
+        width:100%;
+        justify-content:center;
+        margin-left:0;
+        width:100%;
+    }
+    header nav ul li{
+        font-size:20px;
+        padding:0 8px 4px;
+    }
+    main{
+        width:100%;
+    }
+    main h2{
+        margin-left:15px;
+    }
+    main p{
+        margin-left:15px;
+    }
+    .about{
+        margin-bottom:120px;
+    }
+
+    .about .about-content{
+        flex-direction:column;
+    }
+    .about img{
+        width:100%;
+    }
+    .yearly{
+        flex-direction:column;
+    }
+    .yearly .yearly-img{
+        height:320px;
+    }
+    .img1 img{
+        width:200px;
+        height:auto;
+        top:5px;
+        left:40px;
+    }
+    .img2 img{
+        width:170px;
+        height:170px;
+        left:110px;
+        top:160px;
+    }
+    .schedule{}
+    .schedule .monthly img{
+        width:100%;
+        height:auto;
+    }
+    .gallery img{
+        width:100%;
+    }
+    .circle{
+        width:100px;
+        height:100px;
+    }
+    .circle h3{
+        font-size:12px;
+    }
+    .circle p{
+        font-size:6px;
+    }    
+}
